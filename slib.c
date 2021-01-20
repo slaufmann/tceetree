@@ -33,6 +33,17 @@
 #include "slib.h"
 #endif // _ALL_IN_ONE
 
+// replace character a with b in a string (input string is altered!)
+int slibreplacechr(char *sin, char a, char b)
+{
+	int i,n;
+	n = strlen(sin);
+	for (i = 0; i < n; i++)
+		if (sin[i] == a)
+			sin[i] = b;
+
+	return 0;
+}
 // copy string with automatic memory allocation
 int slibcpy(char **sout, char const *sin, int errval)
 {
