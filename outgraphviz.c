@@ -128,8 +128,6 @@ int outnode_gra(ttreenode_t *pnode, treeparam_t *pparam)
 						 "labeljust=\"l\"; ",
 					sclustername, sclusterlabel);
 			}
-			free(sclustername);
-			free(sclusterlabel);
 		}
 
 		if (iErr == 0) {
