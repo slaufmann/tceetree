@@ -36,6 +36,8 @@
 // replace character a with b in a string (input string is altered!)
 int slibreplacechr(char *sin, char a, char b)
 {
+	if (sin == NULL)
+		return 1;
 	int i,n;
 	n = strlen(sin);
 	for (i = 0; i < n; i++)
